@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { Button } from "@/components/ui/button";
 import { Menu, X, Search } from "lucide-react";
 import { Link, useLocation } from 'react-router-dom';
-
+import './NavBar.css';
 interface NavLinksProps {
   mobile?: boolean;
   setIsMenuOpen?: (isOpen: boolean) => void;
@@ -31,7 +31,10 @@ const Navbar = () => {
   }, [location.pathname]);
 
   return (
-    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white/95 shadow-md py-2' : 'bg-transparent py-4'}`}>
+    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 
+                      ${isScrolled ? 'bg-white/95 shadow-md py-2' : 'bg-transparent py-4'}
+                      ${isScrolled ? 'teblack' : 'tewhite'}
+                      `}>
       <div className="biryani-container flex items-center justify-between">
         <Link to="/" className="flex items-center gap-2">
           <span className="text-biryani-saffron text-2xl">✦</span>

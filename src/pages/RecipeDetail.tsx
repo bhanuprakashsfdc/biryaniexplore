@@ -11,6 +11,7 @@ import Footer from '@/components/Footer';
 import { Button } from "@/components/ui/button";
 import RelatedRecipes from '@/components/RelatedRecipes';
 import RecipeFAQ from '@/components/RecipeFAQ';
+import { WEBSITENAME } from '@/constants/constants';
 
 const RecipeDetail = () => {
   const { id } = useParams();
@@ -292,9 +293,9 @@ const RecipeDetail = () => {
   return (
     <>
       <Helmet>
-        <title>{`${recipe.name} Recipe - Authentic Indian Biryani | Biryani Bliss`}</title>
+        <title>{`${recipe.name} Recipe - Authentic Indian Biryani | { WEBSITENAME }`}</title>
         <meta name="description" content={`Learn how to make authentic ${recipe.name.toLowerCase()} with our step-by-step recipe. ${recipe.description}`} />
-        <meta property="og:title" content={`${recipe.name} Recipe - Biryani Bliss`} />
+        <meta property="og:title" content={`${recipe.name} Recipe - { WEBSITENAME }`} />
         <meta property="og:description" content={recipe.description} />
         <meta property="og:image" content={recipe.image} />
         <meta property="og:type" content="article" />
@@ -308,7 +309,7 @@ const RecipeDetail = () => {
             "description": recipe.description,
             "author": {
               "@type": "Organization",
-              "name": "Biryani Bliss"
+              "name": "Biryani Explore"
             },
             "datePublished": "2024-04-24",
             "prepTime": `PT${recipe.preparationTime.split(" ")[0]}M`,

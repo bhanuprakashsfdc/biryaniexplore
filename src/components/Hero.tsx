@@ -43,7 +43,7 @@ const Hero = () => {
           <Button className="bg-biryani-saffron hover:bg-biryani-spice text-white text-lg py-6 px-8">
             Explore Recipes
           </Button>
-          <Button variant="outline" className="border-white text-white hover:bg-white/10 text-lg py-6 px-8">
+          <Button variant="outline" className="border-white text-black hover:bg-white/10 text-lg py-6 px-8">
             Watch Preparation
           </Button>
         </div>

@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
 import { ChefHat, Clock, Users, Search } from "lucide-react";
 import Footer from '@/components/Footer';
+import { WEBSITENAME } from '@/constants/constants';
 
 const Recipes = () => {
   const [activeFilter, setActiveFilter] = useState<string>("all");
@@ -135,7 +136,7 @@ const Recipes = () => {
   return (
     <>
       <Helmet>
-        <title>All Biryani Recipes - Biryani Bliss</title>
+        <title>All Biryani Recipes - { WEBSITENAME }</title>
         <meta name="description" content="Explore our collection of authentic biryani recipes from various regions of India." />
       </Helmet>
 

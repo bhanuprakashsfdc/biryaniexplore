@@ -2,6 +2,7 @@
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { WEBSITENAME } from '@/constants/constants';
 
 const Footer = () => {
   return (
@@ -94,7 +95,7 @@ const Footer = () => {
 
         <div className="py-6 border-t border-gray-800 text-center text-gray-400 text-sm">
           <p>
-            © {new Date().getFullYear()} Biryani Bliss. All rights reserved. Created with passion for biryani lovers.
+            © {new Date().getFullYear()} { WEBSITENAME }. All rights reserved. Created with passion for biryani lovers.
           </p>
         </div>
       </div>

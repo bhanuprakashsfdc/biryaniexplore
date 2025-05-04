@@ -4,6 +4,7 @@ import { useParams } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import { WEBSITENAME } from '@/constants/constants';
 
 const BlogPost = () => {
   const { id } = useParams();
@@ -43,7 +44,7 @@ const BlogPost = () => {
   return (
     <>
       <Helmet>
-        <title>{post.title} - Biryani Bliss Blog</title>
+        <title>{post.title} - { WEBSITENAME } Blog</title>
         <meta name="description" content={post.excerpt} />
       </Helmet>
 

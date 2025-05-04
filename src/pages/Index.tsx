@@ -7,6 +7,7 @@ import BiryaniTypes from '@/components/BiryaniTypes';
 import RecipeSection from '@/components/RecipeSection';
 import Footer from '@/components/Footer';
 import { Button } from "@/components/ui/button";
+import { WEBSITENAME } from '@/constants/constants';
 
 const blogSection = (
   <section id="blog" className="py-20 bg-white">
@@ -88,11 +89,11 @@ const Index = () => {
   return (
     <>
       <Helmet>
-        <title>Biryani Bliss - Authentic Chicken Biryani Recipes & History</title>
+        <title>{ WEBSITENAME } - Authentic Chicken Biryani Recipes & History</title>
         <meta name="description" content="Discover authentic chicken biryani recipes, explore regional varieties, and learn the rich history behind India's most beloved dish. Perfect your biryani cooking skills with our expert guides." />
         <meta name="keywords" content="chicken biryani, authentic biryani recipes, hyderabadi biryani, lucknowi biryani, kolkata biryani, how to make biryani, biryani history" />
         {/* Open Graph / Social Media Meta Tags */}
-        <meta property="og:title" content="Biryani Bliss - Authentic Chicken Biryani Recipes" />
+        <meta property="og:title" content="{ WEBSITENAME } - Authentic Chicken Biryani Recipes" />
         <meta property="og:description" content="Explore the world of authentic chicken biryani with expert recipes, regional varieties, and cooking techniques." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://biryanibliss.com" />
@@ -107,7 +108,7 @@ const Index = () => {
               "image": "https://images.unsplash.com/photo-1633945274565-5f4bea20e266",
               "author": {
                 "@type": "Organization",
-                "name": "Biryani Bliss"
+                "name": "Biryani Explore"
               },
               "datePublished": "2023-04-20",
               "description": "Learn the authentic dum method of preparing aromatic Hyderabadi Biryani with tender chicken pieces.",
